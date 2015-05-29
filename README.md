@@ -16,9 +16,9 @@ These packages were required:
 <br><br>
 
 Setup:
-sudo git clone https://github.com/nweat/simply-chat
-cd simply-chat/
-sudo meteor
+sudo git clone https://github.com/nweat/simply-chat <br>
+cd simply-chat/ <br>
+sudo meteor 
 
 <br><br>
 Feel free to extend its functionality...
