@@ -1,0 +1,20 @@
+This is just a simple app I built to show you some of the functionalities you can achieve with MeteorJS with little code. 
+
+This was based on an existing example but I added the following functionality:
+- CSS improvements
+- 'is typing' functionality
+- show online users
+- automatically slides down when you receive a new message
+
+
+https://atmospherejs.com/mrt/moment-timezone
+http://momentjs.com/timezone/
+
+These packages are required:
+meteor add momentjs:moment
+meteor add accounts-ui accounts-password
+meteor add mrt:moment-timezone 
+meteor add mizzao:user-status
+meteor add jquery
+
+Feel free to reuse and extend its functionality...
