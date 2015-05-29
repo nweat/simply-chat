@@ -13,5 +13,5 @@ These packages are required:
 <br> <b>meteor add momentjs:moment</b>
 <br> <b>meteor add mrt:moment-timezone </b>
 <br> <b>meteor add jquery</b>
-<br>
+<br><br>
 Feel free to extend its functionality...
