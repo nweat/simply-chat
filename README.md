@@ -9,9 +9,9 @@ This example is based on an existing example but I added/improved the following 
 
 These packages are required: 
 <br> <b>meteor add mizzao:user-status</b>
-meteor add accounts-ui accounts-password
-meteor add momentjs:moment
-meteor add mrt:moment-timezone 
-meteor add jquery
-
+<br> <b>meteor add accounts-ui accounts-password</b>
+<br> <b>meteor add momentjs:moment</b>
+<br> <b>meteor add mrt:moment-timezone </b>
+<br> <b>meteor add jquery</b>
+<br>
 Feel free to extend its functionality...
