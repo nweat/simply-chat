@@ -13,10 +13,10 @@ These packages were required:
 <br> <b>meteor add momentjs:moment</b>
 <br> <b>meteor add mrt:moment-timezone </b>
 <br> <b>meteor add jquery</b>
-<br>
+<br><br>
 Setup:  <br>
 sudo git clone https://github.com/nweat/simply-chat <br>
 cd simply-chat/ <br>
 sudo meteor 
-<br>
+<br><br>
 Feel free to extend its functionality...
