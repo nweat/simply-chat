@@ -7,8 +7,8 @@ This example is based on an existing example but I added/improved the following 
 - show online users
 - automatically slides down to a new message
 
-These packages are required:
-meteor add mizzao:user-status
+These packages are required: 
+<br> <b>meteor add mizzao:user-status</b>
 meteor add accounts-ui accounts-password
 meteor add momentjs:moment
 meteor add mrt:moment-timezone 
