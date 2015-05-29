@@ -7,11 +7,18 @@ This example is based on an existing example but I added/improved the following 
 - show online users
 - automatically slides down to a new message
 
-These packages are required: 
+These packages were required: 
 <br> <b>meteor add mizzao:user-status</b>
 <br> <b>meteor add accounts-ui accounts-password</b>
 <br> <b>meteor add momentjs:moment</b>
 <br> <b>meteor add mrt:moment-timezone </b>
 <br> <b>meteor add jquery</b>
+<br><br>
+
+Setup:
+sudo git clone https://github.com/nweat/simply-chat
+cd simply-chat/
+sudo meteor
+
 <br><br>
 Feel free to extend its functionality...
