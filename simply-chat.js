@@ -1,5 +1,5 @@
-// simple-chat.js
-Chat = new Mongo.Collection("chat");
+// simply-chat.js
+Chat = new Mongo.Collection("chat"); //store chat mesages in mongoDB chat collection
 
 if (Meteor.isClient) {
 	Meteor.subscribe("chat");
@@ -23,11 +23,11 @@ if (Meteor.isClient) {
 	 if (Meteor.users.findOne(Meteor.userId())) {
   return Meteor.users.find({"status.online": true, "typing": "typing", username: { $ne: Meteor.user().username } });   //get users typing status only if their online
   }
-  },
-  
-  allowedUsers: function(val) {
-	return Meteor.users.find({"status.online": true}).count() <= val; 
   }
+  
+  /*allowedUsers: function(val) {
+	return Meteor.users.find({"status.online": true}).count() <= val; 
+  }*/
 });
   //==================================================================================BODY HELPERS END
 
@@ -72,7 +72,7 @@ Template.chat.events({
 
 
 Template.chat.rendered = function () {
-  $(".chat-box").animate({ scrollTop: $('.chat-box')[0].scrollHeight}, 5);
+  $(".chat-box").animate({ scrollTop: $('.chat-box')[0].scrollHeight}, 5); //automatic slide down when a new message is received
 }
 //==================================================================================CHAT EVENTS END
 
@@ -105,7 +105,7 @@ Meteor.methods({
 
     Chat.insert({
       text: text,
-      createdAt: moment().tz('America/Belize').format('ha z'), //save time as local time
+      createdAt: moment().tz('America/Belize').format('ha z'), //currently only saves time as local time
       owner: Meteor.userId(),
       username: Meteor.user().username
     });
@@ -138,4 +138,3 @@ if (Meteor.isServer) {
    return Meteor.users.find({});
 });
 }
-
