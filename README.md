@@ -1,5 +1,5 @@
 # simply-chat
-This is a simple real time chat client I built to show you some of the functionalities you can achieve with MeteorJS with a few lines of code. This was my first try at Meteor (https://www.meteor.com/)
+This is a simple real time chat client I built to show you some of the functionalities you can achieve with MeteorJS with a few lines of code. This was my first try at Meteor.
 
 This example is based on an existing example but I added/improved the following functionality:
 - CSS improvements
