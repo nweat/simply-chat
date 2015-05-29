@@ -15,7 +15,7 @@ These packages were required:
 <br> <b>meteor add jquery</b>
 <br><br>
 
-Setup:
+Setup:  <br>
 sudo git clone https://github.com/nweat/simply-chat <br>
 cd simply-chat/ <br>
 sudo meteor 
