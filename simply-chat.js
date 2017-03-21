@@ -1,11 +1,11 @@
-// simply-chat.js
 Chat = new Mongo.Collection("chat"); //store chat mesages in mongoDB chat collection
+
 
 if (Meteor.isClient) {
 	Meteor.subscribe("chat");
 	Meteor.subscribe("userState");
 	
- //==================================================================================BODY HELPERS START
+//==================================================================================BODY HELPERS START
   Template.body.helpers({
 	
   chats: function () {  
@@ -15,7 +15,7 @@ if (Meteor.isClient) {
   },
   onlineUsers: function () {
 	  if (Meteor.users.findOne(Meteor.userId())) {
-  return Meteor.users.find({"status.online": true,  username: { $ne: Meteor.user().username }}); // show all online users
+  return Meteor.users.find({"status.online": true,  username: { $ne: Meteor.user().username }});
  }
   },
   
@@ -25,11 +25,8 @@ if (Meteor.isClient) {
   }
   }
   
-  /*allowedUsers: function(val) {
-	return Meteor.users.find({"status.online": true}).count() <= val; 
-  }*/
 });
-  //==================================================================================BODY HELPERS END
+//==================================================================================BODY HELPERS END
 
 
 //==================================================================================BODY EVENTS START
@@ -56,7 +53,7 @@ Template.body.events({
       Meteor.call("isTyping", 'typing');
     }
     else{ 
-	  Meteor.call("isTyping", '');
+	    Meteor.call("isTyping", '');
 	 }
 }
 });

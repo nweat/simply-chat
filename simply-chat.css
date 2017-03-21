@@ -6,10 +6,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-
   padding: 0;
   margin: 0;
-
   font-size: 14px;
 }
 
@@ -25,12 +23,10 @@ h1 {
   margin-right: 1em;
 }
 
-
 .update-task
 {
 display: inline;
 }
-
 
 ul {
   margin: 0;
@@ -77,6 +73,7 @@ a{
   margin:0 auto;
   color:white;
   margin-bottom:5px;
+  position:absolute;
 }
 
 header {
@@ -95,7 +92,7 @@ header {
 .chat-box,.enter-message{
   background:#5FB471;
   padding:0 20px;
-  color:#a1a1a1;
+  
   
 }
 
@@ -171,7 +168,7 @@ header {
 }
 .message,.message2 span{
   color:black;
-  font-size:12px;
+  font-size:13px;
 }
 .message,.message2 p{
   padding-top:5px;
@@ -205,11 +202,15 @@ header {
   border-radius:2px;
 }
 .enter-message .send{
-  padding:10px;
-  color:white;
+  padding:5px;
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   width:60px;
-  border-radius:2px;
-  float:right;
+  cursor:pointer;
   background:#4876FF;
   font-weight:bold;
 }

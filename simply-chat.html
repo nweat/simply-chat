@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simply Chat</title>
+  <title>Simple Chat</title>
 </head>
 
 <body> 
@@ -14,7 +14,7 @@
      <div class='online'>
       {{#if onlineUsers}} 
       {{#each onlineUsers}}
-      <img src='online.png' width='10px'/> {{username}} 
+       <img src='online.png' width='10px'/> {{username}} 
       {{/each}}
       {{/if}} 
      </div>
@@ -29,7 +29,7 @@
      </div>
 
       {{#if currentUser}} 
-  <div style="{{#if whoisTyping}}font-size:11px;font-family:courier;font-style: italic;width:100%;margin-top:5px;{{/if}}"> 
+      <div style="{{#if whoisTyping}}font-family:courier;font-style: italic;width:100%;margin-top:5px;{{/if}}"> 
       {{#if whoisTyping}} 
       {{#each whoisTyping}}
       {{username}} is {{typing}}...
@@ -43,7 +43,7 @@
   <input type="submit" class="send" value='Send'/>
   </div>
   </form>
-  <div class="developer">Contact developer: nikkiweat@gmail.com</div>
+  <div class="developer">Developer: nikkiweat@gmail.com</div>
   {{/if}} 
 </div>
 </body>
@@ -54,19 +54,11 @@ hard coded profile pics for two test accounts-->
     <div class="message-box {{#if equals username currentUser.username}} left-img{{/if}} {{#unless equals username currentUser.username}} right-img  {{/unless}}">
 		<div class="picture">
         <img src="
-        {{#if equals username 'pupuu'}}
-        http://icons.iconarchive.com/icons/designbolts/despicable-me-2/128/Minion-Dancing-icon.png
-        {{else}}
-        {{#if equals username 'chikku'}} http://icons.iconarchive.com/icons/designbolts/despicable-me-2/128/Agnes-Happy-icon.png   
-        {{else}}
-        http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.hi.png
-        {{/if}} 
-        {{/if}}" 
-        title="user name"/>
-        </div>      
-        		
+        http://www.freeiconspng.com/uploads/little-funny-penguin-png-2.png"
+        title = "user name"/>
+        </div>      	
 	   <div class=" {{#if equals username currentUser.username}} message {{/if}} {{#unless equals username currentUser.username}} message2 {{/unless}}">
-       <button class="delete"><span style="font-size: 9px;">({{createdAt}} {{username}})</span> &times;</button>
+       <button class="delete"><span style="font-size:10px;">({{createdAt}} {{username}})</span> &times;</button>
        <span style="word-wrap: break-word;">{{text}}</span>
        </div>
     </div>
