@@ -10,17 +10,17 @@ This example is based on an existing example but I added/improved the following 
 These packages were required: 
 ```
 meteor add mizzao:user-status
-<br> <b>meteor add accounts-ui accounts-password</b>
-<br> <b>meteor add momentjs:moment</b>
-<br> <b>meteor add mrt:moment-timezone </b>
-<br> <b>meteor add jquery</b>
+meteor add accounts-ui accounts-password
+meteor add momentjs:moment
+meteor add mrt:moment-timezone 
+meteor add jquery
 ```
-<br><br>
-<b>Setup:</b>  <br>
+
+Setup:
 ```
-sudo git clone https://github.com/nweat/simply-chat <br>
-cd simply-chat/ <br>
+sudo git clone https://github.com/nweat/simply-chat
+cd simply-chat/ 
 sudo meteor 
 ```
-<br><br>
-Feel free to extend its functionality...
+
+
